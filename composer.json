@@ -1,0 +1,30 @@
+{
+  "name": "php-task/commission-calculator",
+  "description": "Commission Calculator based on BIN and currency exchange rates.",
+  "type": "project",
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "guzzlehttp/guzzle": "^7.0",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "CommissionCalculator\\": "src/",
+      "CommissionCalculator\\Tests\\": "tests/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CommissionCalculator\\": "src/",
+      "CommissionCalculator\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "minimum-stability": "stable",
+  "license": "MIT"
+}
